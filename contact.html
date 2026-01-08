@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact | The Interwoven Project</title>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+   <a class="brand" href="index.html">
+  <span class="logo-box">
+    <img src="assets/Interwoven2.png" alt="The Interwoven Project logo">
+  </span>
+</a>
+    <nav class="links">
+        <a href="mission.html">Mission</a>
+        <a href="start-a-chapter.html">Start a Chapter</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+    <main class="stack">
+      <section>
+        <div class="content-wrap">
+        <div class="card">
+        <h1>Contact Us</h1>
+        <p>
+          General questions, partnerships, chapter logistics, or anything else. Use the form below and we’ll follow up.
+        </p>
+        </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="content-wrap">
+        <div class="card">
+        <h2>Send a message</h2>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree ID -->
+        <form data-ajax method="POST" action="https://formspree.io/f/xlgdqevz">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+
+          <label for="topic">Topic</label>
+          <input id="topic" name="topic" placeholder="e.g., starting a chapter, partnership, materials">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <!-- basic spam honeypot -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <div class="actions">
+            <button class="btn primary" type="submit">Send message</button>
+          </div>
+          
+          <p class="small">
+            Prefer email? Reach out to us at contact@interwovenproject.org
+          </p>
+        </form>
+        </div>
+        </div>
+      </section>
+<footer class="footer">
+      <span class="footer-copy"> <span id="y"></span> The Interwoven Project</span>
+    </footer>
+  </div>
+
+  <script src="assets/site.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

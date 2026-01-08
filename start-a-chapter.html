@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Start a Chapter | The Interwoven Project</title>
+  <meta name="description" content="Interest form for starting a chapter at your university."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+    <a class="brand" href="index.html">
+  <span class="logo-box">
+    <img src="assets/Interwoven2.png" alt="The Interwoven Project logo">
+  </span>
+</a>
+    <nav class="links">
+        <a href="mission.html">Mission</a>
+        <a href="start-a-chapter.html">Start a Chapter</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="hero" style="padding-top:18px;">
+        <div class="content-wrap wide">
+        <div class="hero-grid">
+
+          <div class="card">
+          <h1>Start a Chapter</h1>
+          <p>
+            Want to launch The Interwoven Project at your university? Great! Chapters are designed to be
+            lightweight, repeatable, and student-run.
+          </p>
+          <h2>What you’ll do as a chapter</h2>
+          <ul>
+            <li>Recruit and train volunteers using beginner-friendly materials</li>
+            <li>Run recurring sessions with a community partner</li>
+            <li>Keep the experience welcoming and accessible</li>
+            <li>Track participation and improve over time</li>
+          </ul>
+
+          <h2>What we provide</h2>
+          <ul>
+            <li>A chapter launch checklist and session format</li>
+            <li>Beginner teaching guides and pattern suggestions</li>
+            <li>Templates for recruiting, scheduling, and outreach</li>
+            <li>Ongoing support as you get set up</li>
+          </ul>
+
+          <div class="notice">
+            <strong>Note:</strong> We’re not gatekeeping. We just want to make sure chapters start in a way that’s sustainable.
+          </div>
+        </div>
+        <div class="card">
+          <h2>Chapter Interest Form</h2>
+
+          <form data-ajax method="POST" action="https://formspree.io/f/mjgknvle">
+            <label for="name">Name</label>
+            <input id="name" name="name" required autocomplete="name"/>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email"/>
+
+            <label for="university">University</label>
+            <input id="university" name="university" required placeholder="e.g., University of ___"/>
+
+            <label for="role">Role / Year</label>
+            <input id="role" name="role" placeholder="e.g., Sophomore, grad student, etc."/>
+
+            <label for="team">Do you have a small team?</label>
+            <input id="team" name="team" placeholder="e.g., just me / 2–3 people / already have officers"/>
+
+            <label for="why">Why do you want to start a chapter?</label>
+            <textarea id="why" name="why" required placeholder="A few sentences is enough."></textarea>
+
+            <label for="partner">Do you have a potential community partner in mind?</label>
+            <textarea id="partner" name="partner" placeholder="If yes, who? If no, that’s fine."></textarea>
+
+            <!-- Honeypot for spam bots -->
+            <input type="text" name="_gotcha" style="display:none"/>
+
+            <div class="actions" style="margin-top:12px;">
+              <button class="btn primary" type="submit">Submit</button>
+              <a class="btn" href="contact.html">Contact Us</a>
+            </div>
+            <p class="small">Need help? Email us at contact@interwovenproject.org</p>
+          </form>
+        </div>
+        </div>
+      </section>
+
+      <section style="margin-top:14px;">
+      <div class="content-wrap wide">
+      <div class="card">
+        <h2>What happens after you submit</h2>
+        <ol class="muted">
+          <li>We review your submission and follow up with next steps.</li>
+          <li>You get a chapter launch checklist and starter materials.</li>
+          <li>You confirm your university’s org requirements and leadership structure.</li>
+          <li>You plan your first sessions and recruit initial volunteers.</li>
+        </ol>
+        </div>
+      </div>
+      </section>
+    </main>
+
+<footer class="footer">
+      <span class="footer-copy"> <span id="y"></span> The Interwoven Project</span>
+    </footer>
+  </div>
+
+  <script src="assets/site.js"></script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
